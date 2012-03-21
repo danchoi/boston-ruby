@@ -70,26 +70,26 @@ BostonRB member github activity:
 
     $ boston-ruby g
 
-      cldwalker : cldwalker pushed to master at cldwalker/bacon               : 05:49PM 03/20
-  berkmancenter : berkmancenter created repository brkmn                      : 05:53PM 03/20
-        sbisker : sbisker started watching Kicksend/mailcheck                 : 05:55PM 03/20
-    techiferous : techiferous pushed to master at techiferous/tabulous        : 05:58PM 03/20
-    techiferous : techiferous created tag v1.3.0  at techiferous/tabulous     : 05:58PM 03/20
-    techiferous : techiferous commented on pull request 14 on                 : 06:02PM 03/20
-                : techiferous/tabulous                                        :
-    techiferous : techiferous commented on issue 13 on techiferous/tabulous   : 06:04PM 03/20
-    techiferous : techiferous closed issue 13 on techiferous/tabulous         : 06:04PM 03/20
-robbfitzsimmons : robbfitzsimmons pushed to master at                         : 06:08PM 03/20
-                : robbfitzsimmons/sample_app                                  :
-      cldwalker : cldwalker created branch fix_change_tests  at               : 06:10PM 03/20
-                : cldwalker/bacon                                             :
-      cldwalker : cldwalker pushed to fix_change_tests at cldwalker/bacon     : 06:19PM 03/20
-      cldwalker : cldwalker opened pull request 11 on chneukirchen/bacon      : 06:25PM 03/20
-      cldwalker : cldwalker commented on pull request 10 on                   : 06:26PM 03/20
-                : chneukirchen/bacon                                          :
-         croaky : croaky opened issue 9 on copycopter/style-guide             : 06:37PM 03/20
-        jferris : jferris created repository jferris.github.com               : 06:38PM 03/20
-        jferris : jferris created branch master  at                           : 06:39PM 03/20
-                : jferris/jferris.github.com                                  :
-        jferris : jferris pushed to master at jferris/jferris.github.com      : 06:44PM 03/20
+          cldwalker : cldwalker pushed to master at cldwalker/bacon               : 05:49PM 03/20
+      berkmancenter : berkmancenter created repository brkmn                      : 05:53PM 03/20
+            sbisker : sbisker started watching Kicksend/mailcheck                 : 05:55PM 03/20
+        techiferous : techiferous pushed to master at techiferous/tabulous        : 05:58PM 03/20
+        techiferous : techiferous created tag v1.3.0  at techiferous/tabulous     : 05:58PM 03/20
+        techiferous : techiferous commented on pull request 14 on                 : 06:02PM 03/20
+                    : techiferous/tabulous                                        :
+        techiferous : techiferous commented on issue 13 on techiferous/tabulous   : 06:04PM 03/20
+        techiferous : techiferous closed issue 13 on techiferous/tabulous         : 06:04PM 03/20
+    robbfitzsimmons : robbfitzsimmons pushed to master at                         : 06:08PM 03/20
+                    : robbfitzsimmons/sample_app                                  :
+          cldwalker : cldwalker created branch fix_change_tests  at               : 06:10PM 03/20
+                    : cldwalker/bacon                                             :
+          cldwalker : cldwalker pushed to fix_change_tests at cldwalker/bacon     : 06:19PM 03/20
+          cldwalker : cldwalker opened pull request 11 on chneukirchen/bacon      : 06:25PM 03/20
+          cldwalker : cldwalker commented on pull request 10 on                   : 06:26PM 03/20
+                    : chneukirchen/bacon                                          :
+             croaky : croaky opened issue 9 on copycopter/style-guide             : 06:37PM 03/20
+            jferris : jferris created repository jferris.github.com               : 06:38PM 03/20
+            jferris : jferris created branch master  at                           : 06:39PM 03/20
+                    : jferris/jferris.github.com                                  :
+            jferris : jferris pushed to master at jferris/jferris.github.com      : 06:44PM 03/20
     [...]
