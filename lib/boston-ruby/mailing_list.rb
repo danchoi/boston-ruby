@@ -38,7 +38,7 @@ threads.to_a.reverse.each do |uid, thread|
 
   longest_name_length = thread[:posts].reduce(0) {|max, post| [max, post[:author].length].max}
 
-  thread[:posts].each do |post|
+  thread[:posts].reverse.each do |post|
     
     # turn links into markdown-esque text
     html = Nokogiri::HTML(post[:summary])
