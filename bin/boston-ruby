@@ -9,6 +9,8 @@ when /^t/
   require 'boston-ruby/twitter'
 when /^b/
   require 'boston-ruby/blogs'
+when /^g/
+  require 'boston-ruby/github'
 else
   abort "I don't recognized that command"
 end
