@@ -13,6 +13,8 @@ when /^b/
   require 'boston-ruby/blogs'
 when /^g/
   require 'boston-ruby/github'
+when /^e/
+  require 'boston-ruby/event'
 when /^w/
   require 'nokogiri'
   html = `curl -s http://ruby.bostonstuff.org/weather`
@@ -29,6 +31,7 @@ Commands:
     t                Show recent tweets by BostonRB members
     g                Show recent github activity by BostonRB members
     b                Show recent blog posts
+    e                Show next BostonRB event
     w                Show current Boston weather
 
 Project homepage: http://github.com/danchoi/boston-ruby 
