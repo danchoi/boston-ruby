@@ -13,6 +13,11 @@ when /^b/
   require 'boston-ruby/blogs'
 when /^g/
   require 'boston-ruby/github'
+when /^w/
+  require 'nokogiri'
+  html = `curl -s http://ruby.bostonstuff.org/weather`
+  puts "\nCurrent Boston weather:"
+  puts Nokogiri::HTML(html).at('div.infoholder').inner_text
 else
   puts <<HELP
 boston-ruby #{BostonRuby::VERSION}
@@ -24,6 +29,7 @@ Commands:
     t                Show recent tweets by BostonRB members
     g                Show recent github activity by BostonRB members
     b                Show recent blog posts
+    w                Show current Boston weather
 
 Project homepage: http://github.com/danchoi/boston-ruby 
 Author: Daniel Choi <dhchoi@gmail.com>

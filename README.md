@@ -10,6 +10,7 @@ line.
           t                Show recent tweets by BostonRB members
           g                Show recent github activity by BostonRB members
           b                Show recent blog posts
+          w                Show current Boston weather
 
 ## Install
 
