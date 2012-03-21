@@ -17,7 +17,6 @@ tweets.map {|post| post.merge(parsed_time: DateTime.parse(post['created_at']))}.
   text = post['text']
   time = post[:parsed_time]
   puts BostonRuby.format_item(longest_name_length, author, text, time)
-  puts
 end
 
 __END__
