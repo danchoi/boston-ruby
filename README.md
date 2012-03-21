@@ -15,6 +15,10 @@ line.
 
     gem install boston-ruby
 
+
+Put `alias bostonrb=boston-ruby` in your `~/.bash_profile` if you want to save a few
+keystrokes.
+
 ## Sample output
 
 
