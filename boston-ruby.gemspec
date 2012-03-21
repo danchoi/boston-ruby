@@ -18,8 +18,10 @@ Gem::Specification.new do |s|
 
   s.rubyforge_project = "boston-ruby"
 
+  s.files         = `git ls-files`.split("\n")
   s.test_files    = []
   s.executables   = ['boston-ruby']
+  s.require_paths = ["lib"]
 
   s.add_dependency 'nokogiri'
   s.add_dependency 'htmlentities'
