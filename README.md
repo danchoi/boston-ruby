@@ -9,7 +9,7 @@ line.
           m                Show recent BostonRB mailing list posts
           t                Show recent tweets by BostonRB members
           g                Show recent github activity by BostonRB members
-
+          b                Show recent blog posts
 
 ## Install
 
@@ -97,3 +97,15 @@ BostonRB member github activity:
                     : jferris/jferris.github.com                                  :
             jferris : jferris pushed to master at jferris/jferris.github.com      : 06:44PM 03/20
     [...]
+
+## Not seeing yourself in the output?
+
+To get your tweets included in the output, go to this BostonRB wiki page and
+add your name and Twitter handle:
+
+https://github.com/bostonrb/bostonrb/wiki/All-Rubyists
+
+If your GitHub activity is not showing, post a GitHub issue.
+
+
+
