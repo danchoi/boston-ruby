@@ -17,9 +17,11 @@ line.
 
     gem install boston-ruby
 
+If you want to save a few keystrokes when you invoke the command, put something like
 
-Put `alias bostonrb=boston-ruby` in your `~/.bash_profile` if you want to save a few
-keystrokes.
+    alias brb=boston-ruby
+    
+in your `~/.bash_profile` and use your alias.
 
 ## Sample output
 
