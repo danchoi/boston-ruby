@@ -106,7 +106,7 @@ add your name and Twitter handle:
 https://github.com/bostonrb/bostonrb/wiki/All-Rubyists
 
 If your GitHub activity is not showing, try updating your GitHub user location to
-one of these locations:
+one of these locations. It's case-insensitive.
 
     - cambridge, ma
     - boston
