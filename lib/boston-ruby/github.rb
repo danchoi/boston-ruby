@@ -15,7 +15,7 @@ longest_name_length = updates.reduce(0) {|max, x| [max, x['author'].length].max}
 updates.reverse.each do |update|
   author = update['author'] 
   #text = [update['title'], update['content']].join("\n\n")
-  text = update['title']
+  text = update['title'].sub(/\w+\s?/, '')
   time = DateTime.parse update['date']
   puts BostonRuby.format_item(longest_name_length, author, text, time)
 end
