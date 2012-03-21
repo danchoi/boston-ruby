@@ -1,8 +1,9 @@
+# encoding: UTF-8
 require 'htmlentities'
 
 module BostonRuby
 
-  VERSION = '0.0.2'
+  VERSION = '0.0.3'
 
   MAX_WIDTH = 90
   CODER = HTMLEntities.new
