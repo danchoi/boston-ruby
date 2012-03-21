@@ -1,15 +1,14 @@
 
 lib/boston-ruby
 
-
 bostonrb script
 
 /updates
-  from_time 
+
 /blog_posts
-  from_time
+
 /tweets
-  from_time
+
 
 
 /weather

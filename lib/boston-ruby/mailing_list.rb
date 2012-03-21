@@ -1,15 +1,18 @@
 #!/usr/bin/env ruby
 
-# CHANGEME
+
+# CHANGEME - MOVE TO bin command
 if ARGV[0] == '-o'
   `open http://groups.google.com/group/boston-rubygroup`
   exit
 end
 
 require 'nokogiri'
-require 'htmlentities'
 require 'date'
-xml = `curl1  -s http://groups.google.com/group/boston-rubygroup/feed/atom_v1_0_msgs.xml?num=50`
+require 'boston-ruby'
+
+# TODO
+xml = `curl1 -s http://groups.google.com/group/boston-rubygroup/feed/atom_v1_0_msgs.xml?num=50`
 
 doc = Nokogiri::XML.parse xml
 
@@ -30,13 +33,10 @@ doc.search('entry').reverse.each {|entry|
   threads[thread_uid][:link] ||= thread_link
   threads[thread_uid][:posts] << data
 }
-require 'yaml'
 
-
-screen_width = 80
-
+puts "(Most recently updated thread is last.)"
+puts
 threads.each do |uid, thread|
-  puts
   puts thread[:title]  
   puts '-' * thread[:title].size
   puts thread[:link]
@@ -52,17 +52,14 @@ threads.each do |uid, thread|
       a.swap("[#{a[:href]}]")
     end
     coder = HTMLEntities.new
-    decoded = coder.decode html.inner_text
-    timestamp = post[:updated].strftime("%m/%d %I:%M %p")
-    body = "#{decoded} (#{timestamp})"
-    body_width = screen_width - longest_name_length - 2
-    wrapped_body_lines = body.gsub(/\n/, " ").gsub(/.{1,#{body_width}}(?:\s|\Z)/){$&+"\n"}.split(/\n/)
-    puts "%#{longest_name_length}s | %s" % [post[:author], wrapped_body_lines.shift]
-    wrapped_body_lines.each do |line|
-      puts "%#{longest_name_length}s | %s" % [" ", line]
-    end
+    text = coder.decode html.inner_text
+    time = post[:updated]
+    author = post[:author]
+    
+    puts BostonRuby.format_item(longest_name_length, author, text, time, true)
     puts
 
   end
+  puts
 
 end
