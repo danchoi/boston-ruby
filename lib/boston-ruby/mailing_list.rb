@@ -3,18 +3,21 @@
 require 'nokogiri'
 require 'date'
 require 'boston-ruby'
+require 'time'
 
 xml = `curl -A "Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.3) Gecko/2008092416 Firefox/3.0.3" -s http://groups.google.com/group/boston-rubygroup/feed/atom_v1_0_msgs.xml?num=50`
 doc = Nokogiri::XML.parse xml
 
 threads = Hash.new
 
-doc.search('entry').reverse.each {|entry|
+doc.search('entry').each {|entry|
   title = entry.at('title').inner_text
   thread_link = entry.at('link')[:href].sub(/\/[^\/]*$/, '')
+  date_s = entry.at('updated/text()').to_s
+  updated = Time.parse(date_s).localtime
   data = { 
     author: entry.at('author/name/text()').to_s,
-    updated: DateTime.parse(entry.at('updated/text()').to_s),
+    updated: updated,
     link_id: entry.at('link')[:href][/\/([^\/]*)\?/, 1],
     summary: entry.at('summary').inner_text.gsub("<br>", " ").gsub(/\s{2,}/, ' ').strip,
   }
@@ -27,7 +30,7 @@ doc.search('entry').reverse.each {|entry|
 
 puts "(Most recently updated thread is last.)"
 puts
-threads.each do |uid, thread|
+threads.to_a.reverse.each do |uid, thread|
   puts thread[:title]  
   puts '-' * thread[:title].size
   puts thread[:link]
