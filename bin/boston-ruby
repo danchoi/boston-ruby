@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-
+require 'boston-ruby'
 command = ARGV.shift
 
 case command
