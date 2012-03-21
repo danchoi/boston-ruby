@@ -11,6 +11,10 @@ line.
           g                Show recent github activity by BostonRB members
 
 
+## Install
+
+    gem install boston-ruby
+
 ## Sample output
 
 
