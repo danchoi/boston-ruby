@@ -33,8 +33,6 @@ Commands:
 
 Project homepage: http://github.com/danchoi/boston-ruby 
 Author: Daniel Choi <dhchoi@gmail.com>
-
-
 HELP
   exit 1
 end
