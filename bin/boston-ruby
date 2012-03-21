@@ -12,5 +12,18 @@ when /^b/
 when /^g/
   require 'boston-ruby/github'
 else
-  abort "I don't recognized that command"
+  puts DATA.read
+  exit 1
 end
+
+__END__
+Usage:  boston-ruby [command]
+
+Commands:
+    m                Show recent BostonRB mailing list posts
+    t                Show recent tweets by BostonRB members
+    g                Show recent git commits by BostonRB members
+
+Project homepage: http://github.com/danchoi/boston-ruby 
+Author: Daniel Choi <dhchoi@gmail.com>
+

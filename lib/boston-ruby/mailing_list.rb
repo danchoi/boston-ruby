@@ -1,19 +1,9 @@
 #!/usr/bin/env ruby
-
-
-# CHANGEME - MOVE TO bin command
-if ARGV[0] == '-o'
-  `open http://groups.google.com/group/boston-rubygroup`
-  exit
-end
-
 require 'nokogiri'
 require 'date'
 require 'boston-ruby'
 
-# TODO
-xml = `curl1 -s http://groups.google.com/group/boston-rubygroup/feed/atom_v1_0_msgs.xml?num=50`
-
+xml = `curl -A "Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.3) Gecko/2008092416 Firefox/3.0.3" -s http://groups.google.com/group/boston-rubygroup/feed/atom_v1_0_msgs.xml?num=50`
 doc = Nokogiri::XML.parse xml
 
 threads = Hash.new

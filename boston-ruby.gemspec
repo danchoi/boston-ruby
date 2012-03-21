@@ -1,24 +1,26 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
 
+require 'boston-ruby'
+
 Gem::Specification.new do |s|
-  s.name        = "boston-stitch"
-  s.version     = '0.0.6'
+  s.name        = "boston-ruby"
+  s.version     = BostonRuby::VERSION
   s.platform    = Gem::Platform::RUBY
   s.required_ruby_version = '>= 1.9.0'
 
   s.authors     = ["Daniel Choi"]
   s.email       = ["dhchoi@gmail.com"]
-  s.homepage    = "http://github.com/danchoi/boston-stitch"
-  s.summary     = %q{Stitch together all the pages of a Boston.com gallery}
-  s.description = %q{Stitch together all the pages of a Boston.com gallery}
+  s.homepage    = "http://github.com/danchoi/boston-ruby"
+  summary = %q{Track BostonRB group and member activity}
+  s.summary     = summary
+  s.description = summary
 
-  s.rubyforge_project = "boston-stitch"
+  s.rubyforge_project = "boston-ruby"
 
   s.test_files    = []
-  s.executables   = ['boston-stitch']
+  s.executables   = ['boston-ruby']
 
-  s.add_dependency 'haml'
   s.add_dependency 'nokogiri'
-  s.add_dependency 'sinatra'
+  s.add_dependency 'htmlentities'
 end
