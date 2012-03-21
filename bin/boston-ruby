@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+
+command = ARGV.shift
+
+case command
+when /^m/
+  require 'boston-ruby/mailing_list'
+else
+  abort "I don't recognized that command"
+end
