@@ -14,6 +14,8 @@ when /^g/
   require 'boston-ruby/github'
 else
   puts <<HELP
+boston-ruby #{BostonRuby::VERSION}
+
 Usage:  boston-ruby [command]
 
 Commands:
