@@ -3,7 +3,7 @@ require 'htmlentities'
 
 module BostonRuby
 
-  VERSION = '0.0.5'
+  VERSION = '0.0.6'
 
   MAX_WIDTH = 90
   CODER = HTMLEntities.new
