@@ -102,6 +102,15 @@ BostonRB member github activity:
             jferris : jferris pushed to master at jferris/jferris.github.com      : 06:44PM 03/20
     [...]
 
+## Unix pipelining tip
+
+In all cases, the most recent items (thread, post, tweet) are at the bottom of
+the output.  So to see the latest stuff immediately, with the option to scroll
+up to see into the past, I recommend piping the command to `less +G`, e.g.
+
+    boston-ruby m | less +G
+
+
 ## Not seeing yourself in the output?
 
 To get your tweets included in the output, go to this BostonRB wiki page and
