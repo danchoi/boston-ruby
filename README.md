@@ -25,7 +25,7 @@ If you want to save a few keystrokes when you invoke the command, put something 
     
 in your `~/.bash_profile` and use your alias.
 
-Or you can write a executable wrapper script -- I named mine `brb` -- like this to always pipe the output to `less +G`:
+Or you can write a executable wrapper script (I named mine `brb`) like this to always pipe the output to `less +G`:
 
     #!/bin/bash
     boston-ruby $1 | less +G
