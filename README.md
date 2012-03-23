@@ -17,11 +17,19 @@ line.
 
     gem install boston-ruby
 
+## Alias or wrap in a bash script
+
 If you want to save a few keystrokes when you invoke the command, put something like
 
     alias brb=boston-ruby
     
 in your `~/.bash_profile` and use your alias.
+
+Or you can write a executable wrapper script -- I named mine `brb` -- like this to always pipe the output to `less +G`:
+
+    #!/bin/bash
+    boston-ruby $1 | less +G
+
 
 ## Sample output
 
