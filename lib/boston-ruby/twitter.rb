@@ -4,7 +4,7 @@ require 'json'
 require 'date'
 require 'boston-ruby'
 
-tweets = JSON.parse(open("http://ruby.bostonstuff.org/tweets?raw=true").read)
+tweets = JSON.parse(open("http://poddb.com:9292/tweets?raw=true").read)
 
 longest_name_length = tweets.reduce(0) {|max, post| [max, post['user_screen_name'].length].max}
 
